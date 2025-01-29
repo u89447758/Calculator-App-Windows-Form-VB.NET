@@ -43,6 +43,7 @@
             MessageBox.Show("Invalid input!")
             Return
         End If
+
         Dim secondNumber As Double = CDbl(txtDisplay.Text)
         Dim result As Double
 
@@ -72,5 +73,6 @@
         currentOperator = ""
         isNewOperation = False
     End Sub
+
 
 End Class

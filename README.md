@@ -2,7 +2,9 @@
 
 A simple yet functional calculator application built with VB.NET and Windows Forms.
 
-![Calculator Screenshot](screenshot.png)
+![Calculator Screenshot](images/screenshot.png)
+
+
 
 ## Features
 - **Basic Operations**: Addition (+), Subtraction (-), Multiplication (×), Division (÷)
@@ -25,8 +27,8 @@ A simple yet functional calculator application built with VB.NET and Windows For
 
 2. **Run from Source**:
    ```bash
-   git clone https://github.com/yourusername/calculator-app-vbnet.git
-   cd calculator-app-vbnet
+   git clone https://github.com/u89447758/Calculator-App-Windows-Form-VB.NET.git
+   cd Calculator-App-Windows-Form-VB.NET
    Open CalculatorApp.sln in Visual Studio
    Build -> Build Solution (Ctrl+Shift+B)
    Press F5 to run
