@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class CalculatorApp
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CalculatorApp))
         Me.txtDisplay = New System.Windows.Forms.TextBox()
         Me.btn0 = New System.Windows.Forms.Button()
         Me.btn1 = New System.Windows.Forms.Button()
@@ -244,8 +245,9 @@ Partial Class Form1
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.btn0)
         Me.Controls.Add(Me.txtDisplay)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Simple Calculator App"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
