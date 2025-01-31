@@ -17,7 +17,14 @@
             isNewOperation = False
         End If
 
-        If btn.Text = "." AndAlso txtDisplay.Text.Contains(".") Then
+        If btn.Text = "." Then
+            If txtDisplay.Text = "" Then
+                txtDisplay.Text = "0."
+            ElseIf txtDisplay.Text.Contains(".") Then
+                Exit Sub
+            Else
+                txtDisplay.Text += "."
+            End If
             Exit Sub
         End If
 
@@ -25,45 +32,67 @@
     End Sub
 
     Private Sub OperatorClick(sender As Object, e As EventArgs) Handles btnPlus.Click, btnMinus.Click, btnMultiply.Click, btnDivide.Click
+        Dim btn As Button = CType(sender, Button)
+
+        ' Validate input number
         If Not Double.TryParse(txtDisplay.Text, firstNumber) Then
-            MessageBox.Show("Invalid input!")
-            Return
+            MessageBox.Show("Invalid number input")
+            Exit Sub
         End If
 
-        Dim btn As Button = CType(sender, Button)
-        firstNumber = CDbl(txtDisplay.Text)
         currentOperator = btn.Text
         isNewOperation = True
     End Sub
 
 
     Private Sub btnEquals_Click(sender As Object, e As EventArgs) Handles btnEquals.Click
-
-        If Not Double.TryParse(txtDisplay.Text, firstNumber) Then
-            MessageBox.Show("Invalid input!")
+        ' Check if operator was selected
+        If String.IsNullOrEmpty(currentOperator) Then
+            MessageBox.Show("No operator selected")
             Return
         End If
 
-        Dim secondNumber As Double = CDbl(txtDisplay.Text)
+        ' Validate second number
+        Dim secondNumber As Double
+        If Not Double.TryParse(txtDisplay.Text, secondNumber) Then
+            MessageBox.Show("Invalid number input")
+            Return
+        End If
+
         Dim result As Double
 
-        Select Case currentOperator
-            Case "+"
-                result = firstNumber + secondNumber
-            Case "-"
-                result = firstNumber - secondNumber
-            Case "*"
-                result = firstNumber * secondNumber
-            Case "/"
-                If secondNumber = 0 Then
-                    MessageBox.Show("Cannot divide by zero!")
-                    Return
-                End If
-                result = firstNumber / secondNumber
-        End Select
+        Try
+            Select Case currentOperator
+                Case "+"
+                    result = firstNumber + secondNumber
+                Case "-"
+                    result = firstNumber - secondNumber
+                Case "*"
+                    result = firstNumber * secondNumber
+                Case "/"
+                    If secondNumber = 0 Then
+                        MessageBox.Show("Cannot divide by zero!")
+                        Return
+                    End If
+                    result = firstNumber / secondNumber
+            End Select
 
-        txtDisplay.Text = result.ToString()
-        isNewOperation = True
+            ' Check for mathematical errors
+            If Double.IsInfinity(result) OrElse Double.IsNaN(result) Then
+                MessageBox.Show("Result is undefined or too large")
+                txtDisplay.Text = ""
+                isNewOperation = True
+                Return
+            End If
+
+            txtDisplay.Text = result.ToString()
+            isNewOperation = True
+
+        Catch ex As Exception
+            MessageBox.Show("Error during calculation: " & ex.Message)
+            txtDisplay.Text = ""
+            isNewOperation = True
+        End Try
     End Sub
 
 

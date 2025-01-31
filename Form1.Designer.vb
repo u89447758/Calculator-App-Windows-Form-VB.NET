@@ -53,6 +53,7 @@ Partial Class Form1
         '
         'btn0
         '
+        Me.btn0.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn0.Location = New System.Drawing.Point(222, 301)
         Me.btn0.Name = "btn0"
         Me.btn0.Size = New System.Drawing.Size(82, 64)
@@ -62,6 +63,7 @@ Partial Class Form1
         '
         'btn1
         '
+        Me.btn1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn1.Location = New System.Drawing.Point(325, 301)
         Me.btn1.Name = "btn1"
         Me.btn1.Size = New System.Drawing.Size(82, 64)
@@ -71,6 +73,7 @@ Partial Class Form1
         '
         'btn2
         '
+        Me.btn2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn2.Location = New System.Drawing.Point(422, 301)
         Me.btn2.Name = "btn2"
         Me.btn2.Size = New System.Drawing.Size(82, 64)
@@ -80,6 +83,7 @@ Partial Class Form1
         '
         'btn5
         '
+        Me.btn5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn5.Location = New System.Drawing.Point(422, 374)
         Me.btn5.Name = "btn5"
         Me.btn5.Size = New System.Drawing.Size(82, 64)
@@ -89,6 +93,7 @@ Partial Class Form1
         '
         'btn4
         '
+        Me.btn4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn4.Location = New System.Drawing.Point(325, 374)
         Me.btn4.Name = "btn4"
         Me.btn4.Size = New System.Drawing.Size(82, 64)
@@ -98,6 +103,7 @@ Partial Class Form1
         '
         'btn3
         '
+        Me.btn3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn3.Location = New System.Drawing.Point(222, 374)
         Me.btn3.Name = "btn3"
         Me.btn3.Size = New System.Drawing.Size(82, 64)
@@ -107,6 +113,7 @@ Partial Class Form1
         '
         'btn6
         '
+        Me.btn6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn6.Location = New System.Drawing.Point(222, 447)
         Me.btn6.Name = "btn6"
         Me.btn6.Size = New System.Drawing.Size(82, 64)
@@ -116,6 +123,7 @@ Partial Class Form1
         '
         'btn7
         '
+        Me.btn7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn7.Location = New System.Drawing.Point(325, 447)
         Me.btn7.Name = "btn7"
         Me.btn7.Size = New System.Drawing.Size(82, 64)
@@ -125,6 +133,7 @@ Partial Class Form1
         '
         'btn9
         '
+        Me.btn9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn9.Location = New System.Drawing.Point(520, 447)
         Me.btn9.Name = "btn9"
         Me.btn9.Size = New System.Drawing.Size(82, 64)
@@ -134,6 +143,7 @@ Partial Class Form1
         '
         'btnDecimal
         '
+        Me.btnDecimal.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnDecimal.Location = New System.Drawing.Point(520, 302)
         Me.btnDecimal.Name = "btnDecimal"
         Me.btnDecimal.Size = New System.Drawing.Size(82, 64)
@@ -143,6 +153,7 @@ Partial Class Form1
         '
         'btnPlus
         '
+        Me.btnPlus.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnPlus.Location = New System.Drawing.Point(222, 231)
         Me.btnPlus.Name = "btnPlus"
         Me.btnPlus.Size = New System.Drawing.Size(82, 64)
@@ -152,6 +163,7 @@ Partial Class Form1
         '
         'btnMinus
         '
+        Me.btnMinus.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnMinus.Location = New System.Drawing.Point(325, 231)
         Me.btnMinus.Name = "btnMinus"
         Me.btnMinus.Size = New System.Drawing.Size(82, 64)
@@ -161,6 +173,7 @@ Partial Class Form1
         '
         'btnMultiply
         '
+        Me.btnMultiply.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnMultiply.Location = New System.Drawing.Point(422, 231)
         Me.btnMultiply.Name = "btnMultiply"
         Me.btnMultiply.Size = New System.Drawing.Size(82, 64)
@@ -170,6 +183,7 @@ Partial Class Form1
         '
         'btnDivide
         '
+        Me.btnDivide.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnDivide.Location = New System.Drawing.Point(520, 232)
         Me.btnDivide.Name = "btnDivide"
         Me.btnDivide.Size = New System.Drawing.Size(82, 64)
@@ -179,6 +193,7 @@ Partial Class Form1
         '
         'btnEquals
         '
+        Me.btnEquals.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnEquals.Location = New System.Drawing.Point(520, 374)
         Me.btnEquals.Name = "btnEquals"
         Me.btnEquals.Size = New System.Drawing.Size(82, 64)
@@ -188,6 +203,7 @@ Partial Class Form1
         '
         'btnClear
         '
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btnClear.Location = New System.Drawing.Point(608, 232)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(82, 64)
@@ -197,6 +213,7 @@ Partial Class Form1
         '
         'btn8
         '
+        Me.btn8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
         Me.btn8.Location = New System.Drawing.Point(422, 447)
         Me.btn8.Name = "btn8"
         Me.btn8.Size = New System.Drawing.Size(82, 64)
